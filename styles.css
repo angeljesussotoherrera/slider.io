@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@368&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 100vh;
+  background: url(bck.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* //////////////// text animation //////////// */
+.texto{
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+
+.texto h1{
+  font-size: 30px;
+  color: #f8f8f8;
+  font-family: 'Recursive', sans-serif;
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px;
+}
+
+.cry{
+  color: #dd760d;
+}
+
+/* //////////////// slider /////////////// */
+.deslice{
+  width: 100%;
+  height: 400px;
+  background-color: rgba(106,46,162,0.3);
+  margin: 70px 0px;
+}
+
+#slider{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 20px;
+  width: 700px;
+  max-width: 100%;
+  height: 400px;
+  position: relative;
+}
+button{
+  border-radius: 30px;
+  border: none;
+  outline: none;
+}
+
+.botones{
+  width: 100%;
+  height: 60px;
+  display: block;
+  position: absolute;
+  top: 350px;
+  
+}
+
+.button1, .button2{
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0,0,0,0.55);
+  color: #f7f7f7;
+  font-size: 30px;
+}
+
+.button1{
+position: absolute;
+left: 50px;
+}
+
+.button2{
+  position: absolute;
+  right: 50px;
+}
+
+
+/* /////////////// footer ///////// */
+
+footer{
+  background-color: rgba(0,0,0,0.9);
+  width: 100%;
+  font-family: 'Recursive', Sans-Serif;
+  color: #f8f8f8;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-top: 20%;
+  padding: 0;
+}
+
+.pp{
+  margin-top: 30px;
+}
+.pp h1{
+  font-size: 20px;
+}
+
+.p{
+  text-align: left;
+  position: absolute;
+  font-size: 8px;
+  color: #f8f8f8;
+}
+
+@media (max-width: 480px){
+  .texto{
+    max-width: 100%;
+  }
+  .deslice{
+    max-width: 100%;
+    height: 320px;
+    margin-top: 20%;
+  }
+  #slider{
+    height: 280px;
+  }
+  .botones{
+    top: 470px;
+    height:40px;
+  }
+  .button1, .button2{
+    width: 40px;
+    height: 40px;
+  }
+  .button1{
+    left: 38%;
+  }
+  .button2{
+    right: 38%;
+  }
+  
+  footer{
+    max-width: 100%;
+    margin-top: 40%;
+  }
+}
+@media (max-width: 780px){
+  .texto{
+    max-width: 100%;
+  }
+  .deslice{
+    max-width: 100%;
+    height: 400px;
+    margin-top: 20%;
+  }
+  #slider{
+    height: 350px;
+  }
+  .botones{
+    top: 500px;
+    height:50px;
+  }
+  .button1, .button2{
+    width: 50px;
+    height: 50px;
+  }
+  .button1{
+    left: 37%;
+  }
+  .button2{
+    right: 37%;
+  }
+  
+  footer{
+    max-width: 100%;
+    margin-top: 50%;
+  }
+}
